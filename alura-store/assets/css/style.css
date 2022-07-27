@@ -1,0 +1,33 @@
+@import url("destaques.css");
+@import url("populares.css");
+
+:root {
+    /* cores */
+    --background: #fdfdfdfd;
+    --background-titulo: #00000080;
+    --texto: #333333;
+}
+
+.app {
+    background: #f1f1f1;
+    display: grid;  
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-areas: 
+        "cabecalho" 
+        "conteudo" 
+        "rodape";
+    grid-template-columns: auto;
+    grid-template-rows: 50px 100vh auto;
+}
+
+.cabecalho {
+    grid-area: cabecalho;
+}
+ 
+.conteudo {
+    grid-area: conteudo;
+}
+
+.rodape {
+    grid-area: rodape;
+}
